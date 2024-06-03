@@ -1,0 +1,10 @@
+# Router Data 
+- device1:
+   host: 172.17.0.2
+   user: vrnetlab
+   passwd: VR-netlab9 
+
+- device2:
+   host: 172.17.0.3
+   user: vrnetlab
+   passwd: VR-netlab9 

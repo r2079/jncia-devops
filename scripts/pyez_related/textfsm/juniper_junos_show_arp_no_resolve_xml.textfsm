@@ -1,0 +1,7 @@
+# juniper_junos_show_arp_no_resolve.textfsm
+Value Required MAC_ADDRESS ([A-Fa-f0-9\:]{17})
+Value Required IP_ADDRESS ([A-Fa-f0-9:\.]+)
+Value Required INTERFACE (\S+)
+
+Start
+  ^${MAC_ADDRESS}\s+${IP_ADDRESS}\s+${INTERFACE}\s*$$ -> Record

@@ -1,0 +1,23 @@
+Sample filtering 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lets understand the configuration utility 
+
+PyEZ Config Utility 
+
+Lock - Candidate Configuration -> Modify (Load,rollback, rescue) -> commit -> unlock
+
+- Explore an example with both normal set and xml with over-write dangers 

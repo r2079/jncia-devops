@@ -1,0 +1,20 @@
+set groups re0 system host-name re0
+set groups re0 interfaces fxp0 unit 0 family inet address 10.0.0.15/24
+set groups re1 system host-name re1
+set groups re1 interfaces fxp0 unit 0 family inet address 10.0.0.16/24
+set apply-groups re0
+set apply-groups re1
+set system login user vrnetlab uid 2000
+set system login user vrnetlab class super-user
+set system login user vrnetlab authentication encrypted-password "$6$CDmzGe/d$g43HmhI3FA.21JCYppnTg1h4q/JO4DOHSICLhhavqBem5zUTgKEcg5m9tBG1Ik6qmfb7L3v.wgj4/DkfgZejO0"
+set system root-authentication encrypted-password "$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/"
+set system host-name mx2
+set system services ssh
+set system services netconf ssh
+set system syslog user * any emergency
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands any
+set chassis fpc 0 pic 0 number-of-ports 96
+set interfaces ge-0/0/0 unit 0 family inet address 9.9.12.2/24
+set interfaces lo0 unit 0 family inet address 2.2.2.2/32

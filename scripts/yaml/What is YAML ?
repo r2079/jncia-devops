@@ -1,0 +1,16 @@
+What is YAML ? 
+ - Used for data serialisation. Ain't Markup Language 
+ - Important for representing data / making our life easier / devops culture / works w
+   PyEZ , Ansible and Jsnapy 
+ - Human readable 
+ - Similar to JSON but much much easier on eyes 
+ -  Get to the point 
+     '-' - represents Lists 
+     ':' - represents dictionaries (maps)
+     booleans - true/flase or yes/ no 
+     '#' - comments 
+     'null/ ' '/ ~' - Empty value 
+     '& and << ' - Anchors and aliases - we will not use them for this course 
+
+Lets explore features with example as its the most effective way. 
+

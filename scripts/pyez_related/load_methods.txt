@@ -1,0 +1,33 @@
+
+
+What are different load methods ? 
+
+
+load replace	
+                Scenario   :    When needing to replace specific sections of the configuration, particularly if these sections are extensive or complex.	
+                Description:    Replaces entire hierarchy levels in the existing configuration with those in the provided file.
+load merge	    
+                Scenario   :    For adding new configurations or modifying existing ones without affecting other unrelated configurations.	
+                Description:    Merges the provided configuration with the existing one, adding new settings or updating existing ones.
+
+load override	
+                Scenarion  :    To apply an entirely new configuration, replacing all existing settings. Commonly used for initial setups or restoring known-good configurations.	
+                Description:    Completely replaces the entire existing configuration with the one from the provided file.
+
+load update	    
+               Scenario   :     For updating existing configurations while minimizing the risk of disrupting unrelated configuration elements.	
+               Description:     Similar to load merge, but it won’t apply parts of the new configuration that conflict with the existing configuration.
+
+load set	    
+               Scenario   :     When configurations need to be entered or scripted in the 'set' command format, especially for users familiar with CLI set commands.	
+               Description:     Adds configuration statements in 'set' format, typically used in CLI. It merges these set commands into the     existing configuration.
+
+load patch	    
+               Scenario    :    In scenarios where precise, incremental changes are described in a diff file, especially useful for controlled updates and rollback scenarios.	
+               Description :    Applies changes described in a diff file to the candidate configuration, allowing for precise adjustments.
+
+
+We will explore load-patch, which is by far the most effective and safe. 
+
+
+

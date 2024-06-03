@@ -1,0 +1,9 @@
+- TextFSM is a python lib used to parse semi structured text data 
+- Initially developed by Google, Python wrapper provided by NTC (Network to Code, A training and service org)
+- Helps transform raw text output into structrued data, more easily processed
+  and parsed 
+- uses its own DSL (Domain Specific Language) and needs a definied template
+- Template has - Value and Start 
+   - Value -> Defines variables to capture 
+   - Start / States -> Defines regex and actions for matching Data 
+-  Supports Netmiko, Nornir, pyAts

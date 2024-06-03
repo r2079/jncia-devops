@@ -1,0 +1,12 @@
+| Jinja2 Element    | Type              | Description                                                  | Example Syntax                            |
+|-------------------|-------------------|--------------------------------------------------------------|-------------------------------------------|
+| Variable          | Data Structure    | Used to display a variable's value.                          | {{ variable_name }}                       |
+| For Loop          | Control Structure | Used to iterate over items of a sequence.                    | {% for item in sequence %}...{% endfor %} |
+| If Statement      | Control Structure | Used for conditional execution of code blocks.               | {% if condition %}...{% endif %}          |
+| Set               | Data Structure    | Used to assign a value to a variable.                        | {% set variable_name = value %}           |
+| Comment           | Other             | Used to add non-executable comments in the template.         | {# comment #}                             |
+
+
+Installation 
+
+-> pip install jinja2 

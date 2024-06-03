@@ -1,0 +1,3 @@
+[edit system]
+-  host-name vmx1;
++  host-name vmx0;
